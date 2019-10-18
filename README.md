@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dish-It!
+Click here to get a live view of the application!
 
-## Available Scripts
+Summary
+Dish-It! is an application that allows you to upload pictures of your food online for others to view. Along with your picture you can give a rating of the food item as well as the locaiton you ate the food so others can go try it for themselves. The goal of this application is to give users the ability to see which food items are the best in their area as well as to see others' opinions on food.
 
-In the project directory, you can run:
+This project was created using React, Mongoose, and an AWS S3 Container.
 
-### `npm start`
+How-To
+Upon opening the application you will be on the Home Page. On the Home Page you can see a feed of posts from other users as well as a Navigation Bar up at the top and a Google Login button in the top right.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Creating an account
+From the Home Page, click on the Google Login button in the top right. (On mobile devices you will have to expand the Navigation Bar by pressing the menu button and find the Google Login button from there.) After clicking Login, you should receive a pop-up from Google. All you have to do is select your Google account and the application will login for you via Google.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+You must have a Google account to login.
 
-### `npm test`
+By logging in with your Google account, it ensures the login is secure and also allows you to better connect with other users. You do not have to worry though, your Google information is not used anywhere in the application. The only information from Google used in our application is your name and your Google profile picture.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uploading a picture
+After logging in, a Post Dish! button should be visible at the bottom of the screen. Click on the button to pull up a form. From this form, please fill out the necessary information and select your picture. After clicking Submit, your feed will refresh and your post will be added to the feed!
 
-### `npm run build`
+My Profile
+On your Profile Page, which you can navigate to by clicking on the My Profile words on the top Navigation Bar, you can see a list of all of your posts! If you wish to delete a post, each post listing has a Delete button for you to click to do so.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Search for dishes
+By going to the Navigation Bar and clicking Discover and then selecting Dishes you will be taken to a Search Page. On this Search Page you can input the name of a dish and click Submit. After clicking submit, posts with the same dish name as your search will appear.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Do note: the search is case sensitive.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Search by location
+By clicking Discover on the Navigation Bar and then clicking Locations, you will be taken to a Search Page. On this Search Page you can input a location into the text box and then click Submit. Upon clicking submit, all posts from the searched location will appear.
 
-### `npm run eject`
+Do note: the search is case senstive but does have drop-down options for ease.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Conclusion
+In conclusion, this application was my favorite project to work on. I was responsible for the back-end which also meant working with a technology not taught in the Full-Stack Bootcamp, the AWS S3 Container. It was challenging but necessary for our project to be able to save images to a database but I was able to accomplish this task with AWS. The rest of the back-end was created via Mongoose, which I found very engaging to use.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If given more time, I would like to make the searches more flexible by finding a way around needing case sensitive inputs. After that, a very nice feature to add would be the ability to add Friends.
