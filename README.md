@@ -1,5 +1,5 @@
 # Dish-It!
-### Click here to get a live view of the application!
+### [Click Here](https://dish-it-app.herokuapp.com/) to get a live view of the application!
 
 # Summary
 ### Dish-It! is an application that allows you to upload pictures of your food online for others to view. Along with your picture you can give a rating of the food item as well as the locaiton you ate the food so others can go try it for themselves. The goal of this application is to give users the ability to see which food items are the best in their area as well as to see others' opinions on food.
